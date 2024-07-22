@@ -16,6 +16,10 @@ The project consists of the following main files and directories:
 - `templates/`: Directory containing all the HTML templates used to render the web pages.
 - `static/`: Directory containing static files such as CSS and JavaScript.
 
+## Database Link
+You can access the provided database at the following link:
+[Database Link](https://bug-free-chainsaw-q79p65gqqrjq24j94-8082.app.github.dev/)
+
 
 ## Code Explanation
 
