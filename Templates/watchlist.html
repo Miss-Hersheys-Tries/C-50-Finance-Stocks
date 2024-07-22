@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Watchlist
+{% endblock %}
+
+{% block main %}
+    <form action="/watchlist" method="post">
+        <div class="form-control">
+            <label for="symbol">Stock Symbol</label>
+            <input type="text" id="symbol" name="symbol" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primnary">Add to Watchlist</button>
+    </form>
+    <h2>Your Watchlist</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Date Added</th>
+                <th scope="col">Current Price</th>
+                <th scope="col">Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in watchlist %}
+                <tr>
+                    <td>{{ stock.symbol }}</td>
+                    <td>{{ stock.timestamp }}</td>
+                    <td>{{ stock.price }}</td>
+                    <td>
+                        <form action="/watchlist/remove" method="post">
+                            <input type="hidden" name="symbol" value="{{ stock.symbol }}">
+                            <button type="submit" class="btn btn-danger">Remove</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
