@@ -74,13 +74,11 @@ To run this project locally, follow these steps:
    ```bash
     export FLASK_APP=application.py
   (This command sets the FLASK_APP environment variable to application.py, indicating to Flask that this is the main file to run.)
-    
-    ```bash
+
     export FLASK_ENV=development 
     
   (This command sets the FLASK_ENV environment variable to development, enabling development mode, which provides helpful error messages and other development features.)
 
-    ```bash
     export API_KEY=your_api_key_here 
   (This command sets the API_KEY environment variable to your IEX Cloud API key. This key is required for the application to fetch real-time stock data from the IEX Cloud API. Make sure to replace your_api_key_here with your actual IEX Cloud API key.)
 4. Run the application
