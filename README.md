@@ -11,7 +11,7 @@ The project skeleton, including `layout.html` and `helpers.py`, was provided by 
 
 ## Project Structure
 The project consists of the following main files and directories:
-- `application.py`: The main application file that contains all the routes and logic for handling user requests.
+- `app.py`: The main application file that contains all the routes and logic for handling user requests.
 - `helpers.py`: Contains helper functions used throughout the application.
 - `templates/`: Directory containing all the HTML templates used to render the web pages.
 - `static/`: Directory containing static files such as CSS and JavaScript.
